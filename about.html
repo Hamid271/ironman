@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - OxfordEducationHub</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: white;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+        }
+
+        .navbar {
+            padding: 15px 0;
+            background: white;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        }
+
+        .nav-link {
+            color: #666;
+            font-size: 14px;
+            padding: 8px 16px;
+        }
+
+        .nav-link:hover {
+            color: #4361EE;
+        }
+
+        .about-btn {
+            background: rgba(67, 97, 238, 0.1);
+            color: #4361EE;
+            border-radius: 12px;
+            padding: 8px 20px;
+            border: none;
+            transition: all 0.3s ease;
+        }
+
+        .team-card {
+            border-radius: 15px;
+            overflow: hidden;
+            border: none;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease;
+        }
+
+        .team-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .mission-section {
+            background: linear-gradient(to right bottom, #ffffff, #f0f4ff);
+            border-radius: 15px;
+            padding: 40px;
+        }
+
+        .value-card {
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            height: 100%;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        }
+
+        .stats-section {
+            background: linear-gradient(to right, #4361EE, #7209B7);
+            color: white;
+        }
+
+        .stat-card {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .timeline {
+            position: relative;
+            padding: 20px 0;
+        }
+
+        .timeline-item {
+            padding: 20px;
+            background: white;
+            border-radius: 15px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-primary" href="index.html">OxfordEducationHub</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="resume-builder.html">Resume Builder</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="courses.html">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tools.html">Tools</a>
+                    </li>
+                </ul>
+                <div class="nav-item active">
+                    <a href="about.html" class="nav-link about-btn">About Us</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="display-4 fw-bold mb-4">Empowering Your Career Journey</h1>
+                    <p class="lead mb-4">At OxfordEducationHub, we're dedicated to helping professionals navigate their career paths with confidence using cutting-edge technology and proven strategies.</p>
+                </div>
+                <div class="col-lg-6">
+                    <img src="/api/placeholder/600/400" alt="About OxfordEducationHub" class="img-fluid rounded-3 shadow">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="mission-section">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto text-center">
+                        <h2 class="mb-4">Our Mission</h2>
+                        <p class="lead">To democratize career development by providing accessible, innovative tools that empower individuals to achieve their professional goals.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Values Section -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Our Core Values</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="value-card">
+                        <h4 class="mb-3">Innovation</h4>
+                        <p>We continuously evolve our tools and approaches to stay ahead of industry trends and provide cutting-edge solutions.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="value-card">
+                        <h4 class="mb-3">Accessibility</h4>
+                        <p>We believe career development tools should be available to everyone, regardless of their background or resources.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="value-card">
+                        <h4 class="mb-3">Excellence</h4>
+                        <p>We strive for excellence in everything we do, from our tool development to our customer support.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section py-5 text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="stat-card">
+                        <div class="stat-number">100K+</div>
+                        <div class="stat-label">Users Worldwide</div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="stat-card">
+                        <div class="stat-number">50K+</div>
+                        <div class="stat-label">Resumes Created</div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="stat-card">
+                        <div class="stat-number">85%</div>
+                        <div class="stat-label">Success Rate</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Our Leadership Team</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card team-card">
+                        <img src="/api/placeholder/400/300" class="card-img-top" alt="CEO">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Sarah Williams</h5>
+                            <p class="card-text text-muted">CEO & Founder</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card team-card">
+                        <img src="/api/placeholder/400/300" class="card-img-top" alt="CTO">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">David Chen</h5>
+                            <p class="card-text text-muted">Chief Technology Officer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card team-card">
+                        <img src="/api/placeholder/400/300" class="card-img-top" alt="COO">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Maria Rodriguez</h5>
+                            <p class="card-text text-muted">Chief Operations Officer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Company Timeline -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Our Journey</h2>
+            <div class="timeline">
+                <div class="row">
+                    <div class="col-lg-6 offset-lg-3">
+                        <div class="timeline-item">
+                            <h5>2023</h5>
+                            <p>Launched OxfordEducationHub platform with AI-powered resume builder</p>
+                        </div>
+                        <div class="timeline-item">
+                            <h5>2024</h5>
+                            <p>Expanded services to include job application tracking and career tools</p>
+                        </div>
+                        <div class="timeline-item">
+                            <h5>2025</h5>
+                            <p>Reached 100,000 users milestone and launched new AI features</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4 bg-dark text-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>OxfordEducationHub</h5>
+                    <p class="small">Empowering your career journey with smart, efficient tools.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-light text-decoration-none">Home</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Privacy Policy</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contact</h5>
+                    <ul class="list-unstyled">
+                        <li>Email: support@careertools.com</li>
+                        <li>Phone: (555) 123-4567</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="text-center">
+                <p class="small mb-0">&copy; 2025 CareerTools. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+<a href="index.html">Home</a>
+<a href="job-tracker.html">Job Tracker</a>
+<a href="tools.html">Tools</a>
+
+</html>

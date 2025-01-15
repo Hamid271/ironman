@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Tools - OxfordEducationHub</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/styles.css" rel="stylesheet">
+    <style>
+        /* Custom Styles */
+        .tool-card {
+            border-radius: 15px;
+            padding: 30px;
+            transition: all 0.3s ease;
+            height: 100%;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        .tool-card:hover {
+            transform: translateY(-5px);
+        }
+        .tool-icon {
+            width: 60px;
+            height: 60px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+        .theme-blue {
+            background-color: rgba(67, 97, 238, 0.1);
+            color: #4361EE;
+        }
+        .theme-purple {
+            background-color: rgba(114, 9, 183, 0.1);
+            color: #7209B7;
+        }
+        .theme-pink {
+            background-color: rgba(247, 37, 133, 0.1);
+            color: #F72585;
+        }
+        .section-header {
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+        .action-btn {
+            background-color: #4361EE;
+            color: white;
+            border-radius: 5px;
+            padding: 10px 20px;
+            transition: background-color 0.3s ease;
+            border: none;
+        }
+        .action-btn:hover {
+            background-color: #3651d4;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar (same for all pages) -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-primary" href="index.html">OxfordEducationHub</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="resume-builder.html">Resume Builder</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="courses.html">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="tools.html">Tools</a>
+                    </li>
+                </ul>
+                <div class="nav-item dropdown">
+              
+                    <ul>
+                        <a href="about.html" class="nav-link" style="background: rgba(67, 97, 238, 0.1); color: #4361EE; border-radius: 12px; padding: 8px 20px;">
+                            About Us
+                        </a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container py-5">
+        <!-- Header Section -->
+        <div class="text-center mb-5">
+            <h1 class="display-5 fw-bold mb-3">Career Development Tools</h1>
+            <p class="text-muted">Everything you need to advance your career journey</p>
+        </div>
+
+        <!-- Tools Grid Section -->
+        <div class="row g-4">
+            <!-- Cover Letter Generator -->
+            <div class="col-md-4">
+                <div class="tool-card theme-blue">
+                    <div class="tool-icon theme-blue">
+                        ✉️
+                    </div>
+                    <h3 class="h5 mb-3">Cover Letter Generator</h3>
+                    <p class="text-muted mb-4">Create tailored cover letters with AI assistance to boost your job application chances.</p>
+                    <button class="action-btn w-100">Create Letter →</button>
+                </div>
+            </div>
+
+            <!-- Interview Preparation -->
+            <div class="col-md-4">
+                <div class="tool-card theme-purple">
+                    <div class="tool-icon theme-purple">
+                        💬
+                    </div>
+                    <h3 class="h5 mb-3">Interview Preparation</h3>
+                    <p class="text-muted mb-4">Practice common interview questions and receive AI-generated feedback to improve your performance.</p>
+                    <button class="action-btn w-100">Start Practice →</button>
+                </div>
+            </div>
+
+            <!-- Salary Calculator -->
+            <div class="col-md-4">
+                <div class="tool-card theme-pink">
+                    <div class="tool-icon theme-pink">
+                        💰
+                    </div>
+                    <h3 class="h5 mb-3">Salary Calculator</h3>
+                    <p class="text-muted mb-4">Compare salaries and benefits packages to make informed career decisions.</p>
+                    <button class="action-btn w-100">Calculate →</button>
+                </div>
+            </div>
+
+            <!-- LinkedIn Optimizer -->
+            <div class="col-md-4">
+                <div class="tool-card theme-blue">
+                    <div class="tool-icon theme-blue">
+                        🔗
+                    </div>
+                    <h3 class="h5 mb-3">LinkedIn Optimizer</h3>
+                    <p class="text-muted mb-4">Optimize your LinkedIn profile with tailored suggestions for better visibility and job opportunities.</p>
+                    <button class="action-btn w-100">Optimize Profile →</button>
+                </div>
+            </div>
+
+            <!-- Skills Assessment -->
+            <div class="col-md-4">
+                <div class="tool-card theme-purple">
+                    <div class="tool-icon theme-purple">
+                        📊
+                    </div>
+                    <h3 class="h5 mb-3">Skills Assessment</h3>
+                    <p class="text-muted mb-4">Evaluate your professional skills and get recommendations to improve your abilities.</p>
+                    <button class="action-btn w-100">Start Assessment →</button>
+                </div>
+            </div>
+
+            <!-- Career Path Planner -->
+            <div class="col-md-4">
+                <div class="tool-card theme-pink">
+                    <div class="tool-icon theme-pink">
+                        🎯
+                    </div>
+                    <h3 class="h5 mb-3">Career Path Planner</h3>
+                    <p class="text-muted mb-4">Map out your career progression, set goals, and track your professional growth over time.</p>
+                    <button class="action-btn w-100">Plan Career →</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
