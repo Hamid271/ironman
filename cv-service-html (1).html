@@ -13,9 +13,44 @@
             transform: translateY(-5px);
             transition: transform 0.3s ease;
         }
+        .whatsapp-button {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 1000;
+            background-color: #25D366;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            transition: transform 0.3s ease;
+        }
+        .whatsapp-button:hover {
+            transform: scale(1.1);
+        }
+        @media (max-width: 768px) {
+            .whatsapp-button {
+                bottom: 20px;
+                right: 20px;
+                width: 50px;
+                height: 50px;
+            }
+        }
     </style>
 </head>
 <body class="bg-gray-50">
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/+YOUR_PHONE_NUMBER" target="_blank" class="whatsapp-button" aria-label="Chat on WhatsApp">
+        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M25.5 14.25C25.5 20.4632 20.4632 25.5 14.25 25.5C12.0893 25.5 10.0725 24.8723 8.35289 23.7782L4.5 25.5L6.22179 21.6471C5.12775 19.9275 4.5 17.9107 4.5 15.75C4.5 9.53679 9.53679 4.5 15.75 4.5C21.9632 4.5 25.5 9.53679 25.5 15.75Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M19.5 18C19.5 18 17.625 16.5 16.5 16.5C15.375 16.5 13.5 18 13.5 18" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M12 13.5H12.0075" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M18 13.5H18.0075" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </a>
     <!-- Hero Section -->
     <header class="hero-gradient text-white py-16">
         <div class="container mx-auto px-4 max-w-6xl">
@@ -267,6 +302,96 @@
                 <a href="#review" class="bg-blue-500 hover:bg-blue-600 px-8 py-4 rounded-lg font-semibold transition-colors">
                     Submit Your CV for a Free Review
                 </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-16 bg-white" id="contact">
+        <div class="container mx-auto px-4 max-w-6xl">
+            <h2 class="text-3xl font-bold mb-12 text-center">Contact Us</h2>
+            <div class="max-w-2xl mx-auto">
+                <div class="bg-gray-50 p-8 rounded-lg shadow-sm">
+                    <div class="mb-8 text-center">
+                        <h3 class="text-2xl font-semibold mb-2">Aqil Akhtar</h3>
+                        <p class="text-gray-600">Career Development Specialist</p>
+                        <a href="mailto:Aqil@oxfordeducationhub.com" class="text-blue-600 hover:text-blue-800">Aqil@oxfordeducationhub.com</a>
+                    </div>
+                    <form class="space-y-6">
+                        <div>
+                            <label class="block text-gray-700 mb-2" for="name">Your Name</label>
+                            <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500" required>
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 mb-2" for="email">Your Email</label>
+                            <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500" required>
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 mb-2" for="subject">Subject</label>
+                            <input type="text" id="subject" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500" required>
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 mb-2" for="message">Message</label>
+                            <textarea id="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500" required></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+            
+            <!-- Simple Contact Info -->
+            <div class="mt-16 max-w-2xl mx-auto text-center bg-gray-50 p-8 rounded-lg shadow-sm">
+                <h3 class="text-2xl font-bold mb-6">Contact Information</h3>
+                <div class="space-y-4">
+                    <div>
+                        <p class="text-gray-700 font-semibold">Name</p>
+                        <p class="text-xl">Aqil Akhtar</p>
+                    </div>
+                    <div>
+                        <p class="text-gray-700 font-semibold">Email</p>
+                        <a href="mailto:Aqil@oxfordeducationhub.com" class="text-xl text-blue-600 hover:text-blue-800">
+                            Aqil@oxfordeducationhub.com
+                        </a>
+                    </div>
+                    <div>
+                        <p class="text-gray-700 font-semibold">Phone</p>
+                        <a href="tel:+YOUR_PHONE" class="text-xl text-blue-600 hover:text-blue-800">
+                            +YOUR_PHONE
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Three Box Contact Layout -->
+            <div class="mt-16 max-w-6xl mx-auto">
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- Name Box -->
+                    <div class="bg-gray-50 p-8 rounded-lg shadow-sm text-center hover:shadow-md transition-shadow">
+                        <div class="text-3xl text-blue-600 mb-4">👤</div>
+                        <h4 class="text-gray-700 font-semibold mb-2">Name</h4>
+                        <p class="text-xl">Aqil Akhtar</p>
+                    </div>
+
+                    <!-- Email Box -->
+                    <div class="bg-gray-50 p-8 rounded-lg shadow-sm text-center hover:shadow-md transition-shadow">
+                        <div class="text-3xl text-blue-600 mb-4">📧</div>
+                        <h4 class="text-gray-700 font-semibold mb-2">Email</h4>
+                        <a href="mailto:Aqil@oxfordeducationhub.com" class="text-xl text-blue-600 hover:text-blue-800">
+                            Aqil@oxfordeducationhub.com
+                        </a>
+                    </div>
+
+                    <!-- Phone Box -->
+                    <div class="bg-gray-50 p-8 rounded-lg shadow-sm text-center hover:shadow-md transition-shadow">
+                        <div class="text-3xl text-blue-600 mb-4">📞</div>
+                        <h4 class="text-gray-700 font-semibold mb-2">Phone</h4>
+                        <a href="tel:+YOUR_PHONE" class="text-xl text-blue-600 hover:text-blue-800">
+                            +YOUR_PHONE
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
